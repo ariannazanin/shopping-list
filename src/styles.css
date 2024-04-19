@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    /*background-image: url(sfondo.jpg); ------> x sfondo con immagine*/
+    background: lightblue;
+    color: rgb(7, 32, 255);
+    font: 25px;
+}
+
+h1 {
+    color: rgb(0, 162, 255);
+    background: lightblue;;
+    font: 50px Georgia, Times, serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font: 30px Helvetica, Arial, sans-serif;
+    margin-left: 15px;
+}
+
+/*input {
+    width: 200px ;
+    height: 35px;
+    margin-left: 380px;
+}*/
+
+
+img {
+    border-radius: 3px;
+    width: 100px ;
+    height: 90px;
+}
+
+th{
+    color: rgb(0, 38, 252);
+    font: 30px Georgia, Times, serif;
+    text-align: center;
+    margin-top: 400px;
+}
+
+td{
+    color: rgb(0, 38, 252);
+    text-align: center;
+}
+
+.alert {
+    padding: 15px;
+    width: 600px;
+    margin-left: 360px;
+    background-color: hsla(0, 76%, 77%, 0.808);
+    color: white;
+    border: 2px solid #fc1100;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }

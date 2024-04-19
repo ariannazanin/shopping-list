@@ -1,0 +1,77 @@
+
+<div class="container mt-3">      
+  <table class="table table-striped">
+    <tr>
+      <th>Elemento</th>
+      <th>Quantità</th>
+      <th>Modifica</th>         
+      <th>Elimina</th>
+      <th>Comprato</th>
+    </tr>
+    <tr *ngFor="let item of list">
+      <td>{{ item.label + '(' + item.bought + ')'}}</td>
+        <td>
+          <select class="btn btn-outline-primary" id="sel1" name="sellist1" width="100px">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </td>
+      <td><button class="btn btn-primary">Modifica</button></td>
+      <td><button (click)="deleteItem(item)" class="btn btn-primary">Elimina</button></td>
+      <td><input type="checkbox" [(ngModel)]="item.bought" style="width: 40px; height: 40px;">
+      </td>
+    </tr>
+  </table>  
+</div>
+
+
+<input [(ngModel)]="inputText" class="btn btn-light" placeholder="Aggiungi elemento" style="margin-left: 360px;"/>
+<button (click)="addItem(inputText)" class="btn btn-primary">Aggiungi </button>
+
+<p></p>
+
+<div class="alert" *ngIf="inputError1">
+  <span class="closebtn" (click)="inputError1 = false">&times;</span> 
+  <strong style="color:#e91404">ATTENZIONE! </strong> Inserire l'elemeto prima di cliccare il bottone "Aggiungi"
+</div>
+
+<!--<div class="alert" *ngIf="inputError2">
+  <span class="closebtn" (click)="inputError2 = false">&times;</span> 
+  <strong style="color:#e91404">ATTENZIONE! </strong> Elemento già presente nella lista
+</div>-->
+
+
+<!--<p *ngFor="let item of list">
+  {{ item }} 
+</p>-->
+
+    <!--<p *ngFor="let item of list">
+      {{ item }}
+      <button (click)="updateItem(inputText)" class="btn btn-primary">Modifica </button>
+      <button (click)="deleteItem(inputText)" class="btn btn-primary">Elimina </button>
+    </p>
+<p></p>-->
+
+
+<!--<div class="clearfix">
+  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+</div>-->
+
+<!--<script>
+  on (release);{
+    if (string(item) == "") {
+      gotoAndStop ("errore");
+    } else {
+      gotoAndStop("inviato");
+    }
+  }
+</script>-->
